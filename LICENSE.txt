@@ -1,0 +1,110 @@
+ioCron License
+--------------
+THE SOFTWARE (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS LICENSE. 
+THE SOFTWARE IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. 
+ANY USE OF THE SOFTWARE OTHER THAN AS AUTHORIZED UNDER THIS LICENSE 
+OR COPYRIGHT LAW IS PROHIBITED. BY EXERCISING ANY RIGHTS TO THE SOFTWARE 
+PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE.
+
+1. Definitions
+	1.	"Agreement Name" shall mean the name used to reference this Agreement in any context, which is "ioCron License"
+	2.	"Software" shall mean the copyrighted material owned by Sebastian Pieczona, subject to the terms of this License. The Software is publicly, uniquely and in its entirety recognizable by a well known name ("Software Name").
+	3.	"Software Release" (or "Release") shall mean a set of files distributed by Sebastian Pieczona. A Release is uniquely identified by the Software Name and a Software Version.
+	4.	"You" (or "Your") shall mean an individual or entity exercising permissions granted by the License and accepting this Agreement.
+	5.	"Product" shall mean one or more websites owned by You, or to which the owner grants You permission to act in behalf of the owner for the purposes of this Agreement.
+	6.	"Adaptation" means a work based upon the Software, or upon the Software and other pre-existing works, such as a translation, adaptation, derivative work, alterations or any other form in which the Software may be transformed, or adapted including in any form recognizably derived from the original.
+	7.	"Domain Name" (or "Domain") shall mean a unique name by which a website is reachable. (For example, if a website is reachable by the address "http://www.example.com", the Domain is "example.com")
+	8.	"Commercial Website" A website shall be considered commercial when income is achieved through it or when the intention of it is to achieve income indirectly. When it sells products or services or has banner and/or advertising reveneus. (For example: portfolios, business websites, shops websites, club websites, auction websites, paid mail services, bet, gamble and lot websites, websites with sales and/or profit making orientation)
+	9.	"Commercial Domain" A Domain shall be considered commercial when it contains one or more Commercial Websites.
+	10.	"Non-Commercial Domain" Any Domain not considered a Commercial Domain by the terms of this Agreement.
+
+2. Grant of License
+Subject to the terms and conditions of this Agreement, Sebastian Pieczona hereby grants You, 
+in one of the License Models described in Section 3 a non-exclusive, perpetual, irrevocable, 
+royalty free, worldwide license to use and distribute a Software Release in a collective work 
+assembled with the Product.
+
+3. License Models
+The Software may be assembled with the Product and redistributed in respect of one of the following models ("License Models") at Your choice:
+	1.	"Non-Commercial" Assembling the Non-Commercial (watermarked) version of the Software into a Product distributed exclusively on Non-Commercial Domains.
+	2.	"Commercial Single Domain" Assembling the Software into a Product distributed on a single Commercial Domain.
+	3.	"Commercial Unlimited" Assembling the Software into a Product distributed on any number of Commercial Domains.
+
+4. Agreement Acceptance
+This Agreement is automatically accepted by both parties as long as You are in possession 
+of legal evidence ("Legal Evidence") that the acceptance has taken place. The Legal Evidence 
+can be represented by a valid purchase invoice or fully paid order confirmation, provided 
+by Sebastian Pieczona and addressed to You. The Legal Evidence must precisely indicate this 
+Agreement Name, the Software Name, the License Model You have chosen and the following 
+restrictive information, if applicable:
+
+	1.	If You have chosen the Non-Commercial License Model, a Domain Name must be indicated in the Legal Evidence. This Agreement will be valid for the Software assembled with Sites publicized under this Domain Name only. Other Domains are excluded by this Agreement as long as a Legal Evidence is not produced for each of these Domains.
+	2.	If You have chosen an Single Domain License Model, a Domain Name must be indicated in the Legal Evidence. This Agreement will be valid for the Software assembled with Sites publicized under this Domain Name only. Other Domains are excluded by this Agreement as long as a Legal Evidence is not produced for each of these Domains.
+	3.	If You have chosen an Unlimited License Model, Your Name must be indicated in the Legal Evidence. This Agreement will be valid for the Software assembled with Products recognizable as owned or produced by You.
+Legal Evidences are not transferable to different Domains.
+
+5. Restrictions
+The license granted in Section 4 above is expressly made subject to and limited by the following restrictions:
+You may not create Adaptations, alter, transform, reverse engineer, de-compile, 
+de-obfuscate or disassemble the Software. The Software may only be altered where 
+expressly permitted by Sebastian Pieczona.
+You may not publish or publicly distribute end-user-specific information that 
+would allow a third party to use the Software without Legal Evidence.
+The Software may only be assembled into a Product under the terms of this License. 
+You must keep intact all copyright notices and notices that refer to this License 
+with every copy of the Software you assemble into a Product.
+
+6. Exclusions from this License Grant
+Nothing in this Agreement shall be interpreted to prohibit Sebastian Pieczona from 
+licensing the Software under terms different from this Agreement. No other promises 
+and rights are conceded by Sebastian Pieczona other than those expressly under 
+this Agreement.
+
+7. Reservation of Rights and Ownership
+Sebastian Pieczona reserves all rights not expressly granted to You in this Agreement. 
+The Software is protected by copyright and other intellectual property laws and treaties. 
+Sebastian Pieczona owns the title, copyright, and other intellectual property rights in 
+the Software. The Software is licensed, not sold. This Agreement does not grant you any 
+rights to trademarks or service the Software marks.
+
+8. Termination
+Without prejudice to any other rights, this Agreement automatically terminates if you fail 
+to comply with the terms and conditions of this Agreement. You may terminate this Agreement 
+at any time without cause. In case of termination, in any circumstance, payments issued by 
+You will not be reimbursed.
+
+9. Support
+Unless explicitly indicated in the Legal Evidence, Sebastian Pieczona is not required to 
+provide you any kind of support on any activity following the acceptance of this Agreement, 
+including, but not limited to, the use, integration or training of the Software.
+
+10. Warranty
+Sebastian Pieczona warrants that he has full title and ownership to the Software and has 
+the authority to grant the license hereunder. To the best of Sebastian Pieczona's knowledge 
+the Software does not infringe upon the intellectual property rights of any third party and 
+that he did not receive any notice regarding any alleged infringement thereof.
+
+11. Disclaimer of Warranties
+With the exclusion of warranties explicitly mentioned in Section 10, the Software and its 
+related material are provided "AS IS" and without warranty of any kind. Sebastian Pieczona 
+expressly disclaims all other warranties, expressed or implied, including, but not limited to, 
+the implied warranties of merchantability and fitness for a particular purpose.
+
+12. Exclusion of Incidental, Consequential and Certain Other Damages
+IN NO EVENT SHALL Sebastian Pieczona BE LIABLE FOR ANY SPECIAL, INCIDENTAL, PUNITIVE, INDIRECT, 
+OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS 
+OR CONFIDENTIAL OR OTHER INFORMATION, FOR BUSINESS INTERRUPTION, FOR PERSONAL INJURY, FOR LOSS 
+OF PRIVACY, FOR FAILURE TO MEET ANY DUTY INCLUDING OF GOOD FAITH OR OF REASONABLE CARE, FOR NEGLIGENCE, 
+AND FOR ANY OTHER PECUNIARY OR OTHER LOSS WHATSOEVER) ARISING OUT OF OR IN ANY WAY RELATED TO THE USE 
+OF OR INABILITY TO USE THE SOFTWARE, THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT OR OTHER SERVICES, 
+INFORMATON, SOFTWARE, AND RELATED CONTENT THROUGH THE SOFTWARE OR OTHERWISE ARISING OUT OF THE USE OF 
+THE SOFTWARE, OR OTHERWISE UNDER OR IN CONNECTION WITH ANY PROVISION OF THIS EULA, EVEN IN THE EVENT 
+OF THE FAULT, TORT (INCLUDING NEGLIGENCE), MISREPRESENTATION, STRICT LIABILITY, BREACH OF CONTRACT, 
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+13. Limitation of Liability
+In no event shall Sebastian Pieczona's liability exceed the license fee paid.
+
+14. Governing Law
+This Agreement shall be construed and controlled by German law. You and Sebastian Pieczona further 
+consent to exclusive jurisdiction by the courts of Germany.
