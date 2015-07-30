@@ -1,4 +1,4 @@
-OSCLASS Search Extended Plugin
+OSClass Search Extended Plugin
 ============================
 
 This plugin is for [OSClass](https://osclass.org) and extends the selectbox functionality / search functionality to simplify the search.
