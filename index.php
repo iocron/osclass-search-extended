@@ -4,7 +4,7 @@
     Plugin URI: http://www.iocron.com
     Description: Extends Search Functionality
     Version: 0.1
-    Author: Sebastian Pieczona (iocron)
+    Author: iocron
     Author URI: http://www.iocron.com
     Plugin update URI: http://www.osclass.org/files/plugins/search_extended/update.php
     Copyright 2015 Sebastian Pieczona <info@iocron.com>
