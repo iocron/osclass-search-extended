@@ -13,8 +13,6 @@
 */
 
 (function($){
-    var i = 0;
-    
     function createList(arr) {
         var parent = arr[0].fk_i_parent_id;
         var parentClass = (parent===null) ? "-1" : parent;
@@ -31,16 +29,10 @@
             el.appendTo(wrap);
         });
         wrap.prependTo(".main-search");
-        i++;
     }
     $(document).ready(function(){
         console.log(searchExtJson);
         createList(searchExtJson);
-        $(".searchMenu").css({
-            "background": "#FFF",
-            "display": "inline-block",
-            "float": "left"
-        });
         $(".searchMenu li a").mouseover(function() {
             event.preventDefault();
             var val = $(this).attr('value');

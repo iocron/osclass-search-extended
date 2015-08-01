@@ -14,14 +14,19 @@
     */
     
     // Hooks
-    osc_add_hook('footer', 'searchExtHTML');
+    osc_add_hook('header', 'searchExtCSS');
+    osc_add_hook('footer', 'searchExtJS');
     
     // Functions
 	function searchExtArray(){
 		return Category::newInstance()->toTree();
 	}
-    
-    function searchExtHTML(){        
+
+    function searchExtCSS(){
+        echo "<link href='".(WEB_PATH)."oc-content/plugins/search_extended/css/searchExtended.css' rel='stylesheet' type='text/css'>";
+    }
+
+    function searchExtJS(){        
         echo "<script>var searchExtJson = ".(json_encode(searchExtArray()))."</script>\n";
         echo "<script type='text/javascript' src='".(WEB_PATH)."oc-content/plugins/search_extended/js/searchExtended.js'></script>\n";
         
