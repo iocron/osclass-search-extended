@@ -42,19 +42,19 @@
     
     
     // HTML Search List Create Function
-    function searchExtCreateList($arr){
-        $parent = $arr[0];        
+    function searchExtCreateList($arr,$parentCnt=0){
+        $parent = $arr[0];
         $parentID = !isset($parent["fk_i_parent_id"]) ? "0" : $parent["fk_i_parent_id"];
         
-        echo "<ul class='level_$parentID'>";
+        echo "<ul class='level_$parentCnt'>";
         foreach($arr as $cnt => $obj){
             $hasSub = isset($obj["categories"]) && count($obj["categories"])>0 ? true : false;
             $submenuClass = $hasSub ? " submenu" : "";
             $firstLastClass = $cnt==0 ? " first" : (count($arr)==$cnt+1 ? " last" : "");
             
-            echo "<li class='level_$parentID$submenuClass$firstLastClass'>";
-            echo    "<a class='level_$parentID' href='index.php?page=search&sCategory=".($obj["fk_i_category_id"])."'>".$obj["s_name"]."</a>";
-                    if($hasSub) searchExtCreateList($obj["categories"]);
+            echo "<li class='level_$parentCnt$submenuClass$firstLastClass'>";
+            echo    "<a class='level_$parentCnt' href='index.php?page=search&sCategory=".($obj["fk_i_category_id"])."'>".$obj["s_name"]."</a>";
+                    if($hasSub) searchExtCreateList($obj["categories"],$parentCnt+1);
             echo "</li>";
         }
         echo "</ul>";
