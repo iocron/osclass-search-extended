@@ -46,10 +46,6 @@
         $parent = $arr[0];
         $parentID = !isset($parent["fk_i_parent_id"]) ? "0" : $parent["fk_i_parent_id"];
         
-        echo "<pre>";
-        print_r($arr);
-        echo "</pre>";
-        
         echo "<ul class='level_$parentCnt'>";
         foreach($arr as $cnt => $obj){
             $hasSub = isset($obj["categories"]) && count($obj["categories"])>0 ? true : false;
