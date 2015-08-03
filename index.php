@@ -13,25 +13,51 @@
     or license key of Sebastian Pieczona / ioCron. Please buy this product from us first.
     */
     
+    
     // Hooks
     osc_add_hook('header', 'searchExtCSS');
-    osc_add_hook('footer', 'searchExtJS');
+    osc_add_hook('footer', 'searchExtInit');
     
-    // Functions
-	function searchExtArray(){
-		return Category::newInstance()->toTree();
-	}
-
+    
+    // Init HTML Search List & Load JS Files
+    function searchExtInit(){
+        $searchExtArray = searchExtArray();
+         
+        echo "<script>var searchExtJson = ".(json_encode($searchExtArray))."</script>\n";
+        echo "<script type='text/javascript' src='".(WEB_PATH)."oc-content/plugins/search_extended/js/searchExtended.js'></script>\n";
+        
+        searchExtCreateList($searchExtArray);
+    }
+    
+    
+    // Init CSS Files
     function searchExtCSS(){
         echo "<link href='".(WEB_PATH)."oc-content/plugins/search_extended/css/searchExtended.css' rel='stylesheet' type='text/css'>";
     }
-
-    function searchExtJS(){        
-        echo "<script>var searchExtJson = ".(json_encode(searchExtArray()))."</script>\n";
-        echo "<script type='text/javascript' src='".(WEB_PATH)."oc-content/plugins/search_extended/js/searchExtended.js'></script>\n";
+    
+    
+    // Return Navigation / Search Array
+    function searchExtArray(){
+        return Category::newInstance()->toTree();
+    }
+    
+    
+    // HTML Search List Create Function
+    function searchExtCreateList($arr){
+        $parent = $arr["0"];        
+        $parentID = !isset($parent["fk_i_parent_id"]) ? "0" : $parent["fk_i_parent_id"];
         
-        //echo "<pre>\n";
-        //print_r(searchExtArray());
-        //echo "\n</pre>";
+        echo "<ul class='level_$parentID'>";
+        foreach($arr as $cnt => $obj){
+            $hasSub = isset($obj["categories"]) && count($obj["categories"])>0 ? true : false;
+            $submenuClass = $hasSub ? " submenu" : "";
+            $firstLastClass = $cnt==0 ? " first" : (count($arr)==$cnt+1 ? " last" : "");
+            
+            echo "<li class='level_$parentID$submenuClass$firstLastClass'>";
+            echo    "<a class='level_$parentID' href='index.php?page=search&sCategory=".($obj["fk_i_category_id"])."'>".$obj["s_name"]."</a>";
+                    if($hasSub) searchExtCreateList($obj["categories"]);
+            echo "</li>";
+        }
+        echo "</ul>";
     }
 ?>
