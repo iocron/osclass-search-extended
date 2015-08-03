@@ -44,7 +44,7 @@
     
     // HTML Search List Create Function
     function searchExtCreateList($arr){
-        $parent = $arr["0"];        
+        $parent = $arr[0];        
         $parentID = !isset($parent["fk_i_parent_id"]) ? "0" : $parent["fk_i_parent_id"];
         
         echo "<ul class='level_$parentID'>";
