@@ -22,11 +22,10 @@
     // Init HTML Search List & Load JS Files
     function searchExtInit(){
         $searchExtArray = searchExtArray();
-         
-        echo "<script>var searchExtJson = ".(json_encode($searchExtArray))."</script>\n";
-        echo "<script type='text/javascript' src='".(WEB_PATH)."oc-content/plugins/search_extended/js/searchExtended.js'></script>\n";
         
         searchExtCreateList($searchExtArray);
+        echo "<script>var searchExtJson = ".(json_encode($searchExtArray))."</script>\n";
+        echo "<script type='text/javascript' src='".(WEB_PATH)."oc-content/plugins/search_extended/js/searchExtended.js'></script>\n";
     }
     
     
