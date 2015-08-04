@@ -19,22 +19,28 @@
     osc_add_hook('footer', 'searchExtInit');
     
     
+    // Constants
+    define("SEARCH_EXT_FILE_PATH",realpath(dirname(__FILE__)));
+    define("SEARCH_EXT_DIR_BASENAME",basename(SEARCH_EXT_FILE_PATH));
+    define("SEARCH_EXT_DIR_WEB_PLUGIN_PATH",WEB_PATH."oc-content/plugins/".SEARCH_EXT_DIR_BASENAME);
+
+
     // Init HTML Search List & Load JS Files
     function searchExtInit(){
         $searchExtArray = searchExtArray();
-        
+                
         echo "<nav class='searchExtNav'>";
         searchExtCreateList($searchExtArray);
         echo "</nav>";
         
         echo "<script>var searchExtJson = ".(json_encode($searchExtArray))."</script>\n";
-        echo "<script type='text/javascript' src='".(WEB_PATH)."oc-content/plugins/search_extended/js/searchExtended.js'></script>\n";
+        echo "<script type='text/javascript' src='".SEARCH_EXT_DIR_WEB_PLUGIN_PATH."/js/searchExtended.js'></script>\n";
     }
     
     
     // Init CSS Files
     function searchExtCSS(){
-        echo "<link href='".(WEB_PATH)."oc-content/plugins/search_extended/css/searchExtended.css' rel='stylesheet' type='text/css'>";
+        echo "<link href='".SEARCH_EXT_DIR_WEB_PLUGIN_PATH."/css/searchExtended.css' rel='stylesheet' type='text/css'>";
     }
     
     
