@@ -23,7 +23,10 @@
     function searchExtInit(){
         $searchExtArray = searchExtArray();
         
+        echo "<nav class='searchExtNav'>";
         searchExtCreateList($searchExtArray);
+        echo "</nav>";
+        
         echo "<script>var searchExtJson = ".(json_encode($searchExtArray))."</script>\n";
         echo "<script type='text/javascript' src='".(WEB_PATH)."oc-content/plugins/search_extended/js/searchExtended.js'></script>\n";
     }
