@@ -28,6 +28,10 @@
             }
         });
     }
+	$.fn.switchUl = function() {
+		console.log(this);
+		return this;
+	};
     function switchUl(element) {
         $(element).children('.next').on('click', function(event) {
             event.preventDefault();
@@ -70,5 +74,6 @@
         });
         addActive($(".searchExtNav .level_0 > li"));
         switchUl($(".searchExtNav .level_1 > li"));
+        $(".searchExtNav .level_1 > li").switchUl();
     }); 
 })(jQuery);
