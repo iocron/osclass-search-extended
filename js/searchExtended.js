@@ -13,7 +13,62 @@
 */
 
 (function($){
+    function addActive(element) {
+        $(element).hover(function() {
+            if(!$(this).hasClass('active_li')) {
+                $(".active_li").removeClass('active_li');
+                $(this).addClass('active_li').children('ul').addClass('active_ul').fadeIn(600);
+            }
+        }, function() {
+            if($(this).hasClass('active_li')) {
+                $(".active_li ul").fadeOut(100, function() {
+                    $(".active_ul").removeClass('active_ul');
+                    $(this).removeClass('active_li');
+                });
+            }
+        });
+    }
+    function switchUl(element) {
+        $(element).children('.next').on('click', function(event) {
+            event.preventDefault();
+            $(element).parent('ul').css('top', '-100%');
+            $(element).children('ul').css('top', '100%').fadeIn(200, function() {
+                
+            });
+
+        });
+        $(element).children('.before').on('click', function(event) {
+            event.preventDefault();
+            
+        });
+    }
     $(document).ready(function(){
-		// Something new is coming... Last Man Standing
+		$("body").addClass('js');
+        $(".searchExtNav > ul ul").css('display', 'none');
+        var max_height = 0;
+        $('.searchExtNav ul').each(function(e) {
+            h = $(this).height();
+            if(typeof(h) != "undefined") {
+                if(h > max_height) {
+                    max_height = h;
+                }
+            }
+        });
+        if(max_height > 0) {
+            $('.searchExtNav ul').height(max_height);
+        }
+        $(".searchExtNav li").each(function(index, el) {
+            if($(el).hasClass('submenu') && $(el).hasClass('level_0')) {
+                $(el).append('<span class="next"><i class="fa fa-arrow-right"></i></span>');
+            } else if($(el).hasClass('submenu') && !$(el).hasClass('level_0')) {
+                $(el).append('<span class="next"><i class="fa fa-arrow-right"></i></span>');
+                $(el).prepend('<span class="before"><i class="fa fa-arrow-left"></i></span>');
+                $(el).find("ul").css('z-index', 150+index);
+            } else {
+                $(el).find("ul").css('z-index', 150+index);
+            }
+        });
+        addActive($(".searchExtNav .level_0 > li"));
+        switchUl($(".searchExtNav .level_1 > li"));
     }); 
 })(jQuery);

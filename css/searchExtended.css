@@ -1,5 +1,19 @@
-.searchMenu {
-	background: #FFF;
-	display: inline-block;
-	float: left;
-}
+.searchExtNav { left: 0; position: relative; top: 0; overflow: hidden; z-index: 800; }
+.searchExtNav ul { background: #FFF; padding: 0; margin: 0; }
+.searchExtNav ul li { clear: both; display: block; float: left; list-style: none; width: 100%; }
+.searchExtNav ul li a { display: block; }
+.searchExtNav > ul { left: 0; position: relative; top: 0; width: 20%; }
+.searchExtNav > ul > li {  }
+.searchExtNav > ul > li > a { position: relative; z-index: 10; }
+.searchExtNav > ul ul { display: none; left: 100%; padding-left: 10px; position: absolute; top: 0; width: 100%; }
+.searchExtNav ul li:hover > ul { display: block; }
+.searchExtNav .submenu:after { content:">"; right: 0; position: absolute; top: 0; }
+.js .searchExtNav > ul ul { display: block; z-index: 50; }
+.js .searchExtNav > ul .active_ul { z-index: 100; }
+.js .searchExtNav .level_0 .level_1 ul { left: 0; }
+.js .searchExtNav ul li:hover > ul { display: none; }
+.js .searchExtNav ul li a { display: inline-block; }
+.js .searchExtNav .submenu:after { content: " "; display: none; }
+.js .searchExtNav .before, .js .searchExtNav .next { cursor: pointer; display: inline-block; position: relative; z-index: 20; }
+.js .searchExtNav .before { float: left; }
+.js .searchExtNav .next { float: right; }
